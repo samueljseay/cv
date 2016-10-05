@@ -1,13 +1,16 @@
+/* GENERAL STYLES */
 body {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 0;
   margin: 0;
   background-color: #fefefe;
+  color: #010402;
 }
 
 /* HEADER */
 .cv-header {
   background-color: #f9fafb;
+  border-bottom: 1px solid lightgrey;
 }
 
 .cv-header h1 {
@@ -22,6 +25,7 @@ body {
   margin-top: 0;
   letter-spacing: 0.1em;
   font-weight: lighter;
+  font-size: 2em;
 }
 
 .cv-header .cv-header-section {
@@ -105,15 +109,29 @@ body {
 
 .cv-timeline-list-item-text {
   margin-left: 40px;
+  color: #4d4d4d;
 }
 
 .cv-timeline-list-item-label {
   display: inline-block;
   width: 100px;
+  color: #4d4d4d;
 }
 
+.cv-timeline-list-item-value {
+  color: #4d4d4d;
+  letter-spacing: 0.1em;
+}
+
+/* TIMELINE ROW */
+.timeline-row:last-child .cv-timeline.single.large .cv-timeline-list-item {
+  padding-bottom: 0;
+}
+
+/* PROGRESS BAR */
 .cv-progress-label {
   width: 100px;
+  color: #4d4d4d;
 }
 
 .cv-progress-bar, .cv-progress-label {
@@ -133,4 +151,23 @@ body {
 .cv-progress-bar-fill {
   background-color: #478ecb;
   height: 100%;
+}
+
+/* TEXT CONTENT */
+
+.cv-text-content p {
+  margin-top: 0;
+}
+.cv-text-content h3 {
+  margin-bottom: 0;
+}
+
+/* SECTIONS */
+section {
+  border-bottom: 1px solid #b4b5b5;
+  padding: 50px 0 90px 0;
+}
+
+section:last-child {
+  border: none;
 }
