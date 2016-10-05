@@ -1,0 +1,136 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #fefefe;
+}
+
+/* HEADER */
+.cv-header {
+  background-color: #f9fafb;
+}
+
+.cv-header h1 {
+  letter-spacing: 0.2em;
+  font-size: 4em;
+  margin-top: 35px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.cv-header h2 {
+  margin-top: 0;
+  letter-spacing: 0.1em;
+  font-weight: lighter;
+}
+
+.cv-header .cv-header-section {
+  border-top: 20px solid #478ecb;
+  padding: 40px 0;
+}
+
+
+/* INNER */
+.cv-inner {
+  padding: 0 5%;
+}
+
+/* TIMELINE */
+.cv-timeline {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cv-timeline-list-item {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.cv-timeline-list-item:before {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  transform: rotateZ(-45deg);
+  content: "";
+  margin-right: 20px;
+  background-color: #fefefe;
+  border: 2px solid #478ecb;
+  position: absolute;
+  top: 4px;
+}
+
+.cv-timeline.large .cv-timeline-list-item-text {
+  margin-left: 130px;
+}
+
+.cv-timeline.large.single .cv-timeline-list-item {
+  padding-bottom: 40px;
+}
+
+.align-single-timeline {
+  margin-top: -40px;
+}
+
+.cv-timeline-list-item-text h2, .cv-timeline-list-item-text h3 {
+  margin-top: 0;
+}
+
+.cv-timeline-list-item:after {
+  width: 1px;
+  height: 100%;
+  background-color: #478ecb;
+  display: inline-block;
+  content: "";
+  position: absolute;
+  left:7px;
+  top: 19px;
+}
+
+.cv-timeline-list-item:last-child:after {
+  background: none;
+}
+
+.cv-timeline.single .cv-timeline-list-item:last-child:after {
+  background-color: #478ecb;
+}
+
+.cv-timeline.single.first {
+  margin-top: 16px;
+}
+
+.cv-timeline.single {
+  margin-top: -40px;
+}
+
+.cv-timeline-list-item-text {
+  margin-left: 40px;
+}
+
+.cv-timeline-list-item-label {
+  display: inline-block;
+  width: 100px;
+}
+
+.cv-progress-label {
+  width: 100px;
+}
+
+.cv-progress-bar, .cv-progress-label {
+  float: left;
+}
+
+.cv-progress-bar {
+  height: 12px;
+  display: inline-block;
+  width: 140px;
+  margin: 2px 0 0 20px;
+  border-radius: 12px;
+  border: 2px solid #478ecb;
+  position: relative;
+}
+
+.cv-progress-bar-fill {
+  background-color: #478ecb;
+  height: 100%;
+}
